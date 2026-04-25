@@ -1,0 +1,136 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f0f2f5;
+}
+
+/* Botão flutuante */
+.chat-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #25D366, #20c65b);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+}
+
+/* Janela do chat */
+.chat-window {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    width: 380px;
+    height: 580px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.3);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.chat-header {
+    background: linear-gradient(135deg, #001f3f, #002b5c);
+    color: white;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.avatar {
+    font-size: 36px;
+}
+
+.status {
+    font-size: 13.5px;
+    color: #90ee90;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 20px 18px;
+    overflow-y: auto;
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 13px 16px;
+    border-radius: 20px;
+    line-height: 1.45;
+    font-size: 15.3px;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background: white;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.message.user {
+    align-self: flex-end;
+    background: #dcf8c6;
+    border-bottom-right-radius: 5px;
+}
+
+.chat-footer {
+    padding: 14px 16px;
+    background: white;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+#userInput {
+    flex: 1;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    font-size: 15.5px;
+}
+
+#sendBtn {
+    background: #001f3f;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
