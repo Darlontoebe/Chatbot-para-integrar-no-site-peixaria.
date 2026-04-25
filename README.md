@@ -32,4 +32,4 @@ Este projeto foi criado como parte do meu portfólio para demonstrar habilidades
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/SEU_USUARIO/zz-peixaria-chatbot.git
+   https://github.com/Darlontoebe/Chatbot-para-integrar-no-site-peixaria.
